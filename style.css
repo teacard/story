@@ -1,0 +1,146 @@
+
+/*---影片背景---*/
+.video-back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+
+.Index-set{
+	width: 100%;
+	min-height: 50%;
+	text-align: center;
+}
+
+.Down-Button{
+	margin-top: 25%;
+	text-align: center;	
+}
+
+/* 40px */
+.toTop-arrow {
+	width: 250px;
+	height: 100px;
+	padding: 0;/*偏移*/
+	margin: 0;/*偏移*/
+	border: 0;/*邊框*/
+	background-color: transparent;/*背景透明*/
+	border-radius: 20%;/*按鈕圓滑度*/
+	cursor: pointer; /*改變滑鼠樣式*/
+	color: white;
+	font-size: 20px;/*字體大小*/
+	text-align: center;/*字體置中*/
+}
+.mark{
+	color: white;
+	font-size: 30px;
+}
+
+/*world*/
+.World{
+	z-index: 1;
+	width: 70%;
+	height: 70%;
+}
+/*taiwan*/
+.Taiwan{
+	width: 100px;
+	height: 125px;
+	position: absolute;
+	top: 220%;
+	left: 1020px;
+	z-index: 2;
+}
+/*menu.section*/
+.menubox{
+	width: 1000px;
+	height: 50px;
+	position:absolute;
+	top: 5%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -500px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menu {
+    font-family: '標楷體';
+    font-size: 40px;
+}
+.menu > li { /*子選擇器，只有第一層*/
+    float: left;
+}
+.menu li {
+    position: relative;
+    padding: 0px;
+    border: lightblue 1px dashed;
+    min-width: 120px;
+}
+.menu ul {
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    display:none; /*預設ul不顯示*/
+}
+.menu ul li> ul {/*定義上一層ul li與下一層ul的距離*/
+    z-index: 20;
+    top: 5%;
+    left: 95%;
+}
+.menu li:hover > ul {
+    display: block; /*移動到li，li下一層的ul才顯示*/
+}
+.menu li{
+	background-color: white;
+}
+.section{
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	width: 1000px;/*自動調整高.寬*/
+    height: auto;
+	border-radius: 10px;/*邊邊圓滑*/
+	top: 10%;
+	left: 50%;
+	margin-left: -500px;
+}
+.section h1{
+	text-align: center;
+}
+.tdiv{
+	top: 20%;
+	left: 20%;
+	background-color: white;
+	opacity: 0.5;
+}
+.menu li a{
+	color: black;
+}
+.menu li a:hover{
+	color:white;
+}
+
+/*japan*/
+.Japan{
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	top: 205%;
+	left: 71%;
+	z-index: 2;
+}
+/*usa*/
+.usa{
+	width: 100px;
+	height: 125px;
+	position: absolute;
+	top: 205%;
+	left: 25%;
+	z-index: 2;
+}
+

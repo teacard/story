@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="陳佳胤 許倚僭"/>
+    <meta name="keywords" content="都市怪談 民間傳說"/>
+    <meta name="description" content="台日美的怪談大合集..."/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(function(){
+            last=$("body").height()
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:last}, 750);
+            });
+            
+        });
+
+        $(function(){
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 1000 ){
+                    $('#Taiwanese').fadeIn(1000);
+                    $('#Japanese').fadeIn(1000);
+                    $('#USA').fadeIn(1000);
+                } else {
+                    $('#Taiwanese').stop().fadeOut(500);
+                    $('#Japanese').stop().fadeOut(500);
+                    $('#USA').stop().fadeOut(500);
+                }
+            }).scroll();
+        });
+
+    </script>
+
+    <title>16-30 乂傳奇軼事乂</title>
+</head>
+<body>    
+    <video class="video-back" autoplay muted loop>
+        <source src="photo/background.mp4">
+    </video>
+    <audio controls autoplay loop>
+        <source src="audio/fighting.mp3">
+    </audio>
+    <div class="Index-set">
+        <div class="Down-Button">
+            <img src="photo/start.png"><br>
+            <button type="button" id="BackTop" class="toTop-arrow">
+                Click To Down！！
+                <div align="center">
+                    <img src="photo/arrow.png" style="width: 200px; height: 100px;">
+                </div>
+            </button>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="Index-set">
+        <h1 class="mark">Choose County Story</h1>
+        <div align="center">
+            <img src="photo/worldmap.png" class="World">
+            <img src="photo/taiwan.png" class="Taiwan" id="Taiwanese" usemap="#mapt">
+            <img src="photo/japanese.png" class="Japan" id="Japanese" usemap="#mapj">
+            <img src="photo/usa.png" class="usa" id="USA" usemap="#mapu">
+        </div>
+    </div>
+    <map name="mapt">
+        <area shape="rect" coords="0,0,100,70" href="taiwan.html">
+    </map>
+    <map name="mapj">
+        <area shape="rect" coords="0,0,100,70" href="japan.html">
+    </map>
+    <map name="mapu">
+        <area shape="rect" coords="0,0,100,70" href="usa.html">
+    </map>
+</body>
+</html>
